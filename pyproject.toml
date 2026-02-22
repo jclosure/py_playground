@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_playground"
+version = "0.1.0"
+description = "Modern Python playground for model exploration and AI tools"
+authors = [ { name = "Loop" } ]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License"
+]
+
+dependencies = [
+  "httpx>=0.23.0",
+  "fastapi>=0.96.0",
+  "uvicorn[standard]>=0.22.0",
+  "pydantic>=1.10.0"
+]
